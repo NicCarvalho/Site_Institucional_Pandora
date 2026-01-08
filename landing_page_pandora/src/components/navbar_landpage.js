@@ -14,9 +14,10 @@ export default function Navbar_landpage() {
           height={100} />
         </div>
         <div className="flex flex-row space-x-10 font-semibold">
-          <h1>Sobre Nós</h1>
-          <h1>Produtos</h1>
-          <h1>Contato</h1>
+          <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Home</button>
+            <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Sobre Nós</button>
+            <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Produtos</button>
+            <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Contato</button>
         </div>
       </nav>
     </div>

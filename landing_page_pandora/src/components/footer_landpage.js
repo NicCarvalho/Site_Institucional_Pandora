@@ -7,7 +7,7 @@ import { FaPhone } from "react-icons/fa";
 export default function Footer_landpage() {
   return (
     <div>
-      <footer className="bg-white text-black text-center p-4">
+      <footer className="bg-white text-black text-center p-4 border-t-4 border-[#F4C317]">
         <div className="flex flex-row justify-around items-center border-b-2">
             <div>
                 <Image

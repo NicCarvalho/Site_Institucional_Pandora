@@ -5,7 +5,10 @@ import Image from "next/image";
 export default function Navbar_landpage() {
   return (
     <div>
-      <nav className="bg-white text-black flex flex-row justify-around items-center space-y-4">
+      <nav className="bg-white text-black
+      flex flex-row justify-around items-center 
+      space-y-4 border-b-4 
+      border-[#F4C317]">
         <div className="">
           <Image 
           src="/icon/pandoratextil.jpeg" 

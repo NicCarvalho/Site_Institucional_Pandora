@@ -1,3 +1,4 @@
+import Produtos from "@/components/produtos";
 import Image from "next/image";
 
 export default function Home() {
@@ -55,17 +56,16 @@ export default function Home() {
 
       {/* Seção Produtos */}
 
-      <div className="text-black">
-      Seção de produtos
-      </div>
+      <Produtos />
 
       {/* Seção Contato */}
 
       <div className="flex flex-col size-full">
-        <div className="flex flex-col md:flex-row text-black justify-around
-        md:space-x-10">
-          <div className="flex flex-row items-center">
-            <div className="">
+        <div className="flex flex-col md:flex-row items-center justify-evenly py-10
+        md:space-x-10
+        text-white bg-[#0E4935]">
+          <div className="flex flex-row items-center space-x-3 md:space-x-5">
+            <div className="bg-[rgba(255,255,255,0.95)] rounded-full">
               <Image 
               src="/icon/ptextil.png"
               alt="Logo da Pandora"
@@ -74,19 +74,25 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col max-w-lg">
-              <h1>Fale Conosco</h1>
+              <h1 className="text-[#F4C317] text-4xl font-semibold">Fale Conosco</h1>
               <p>Entre em contato conosco, peça um orçamento sem compromisso e descubra como podemos transformar o seu negócio hoje.</p>
             </div>
           </div>
 
-          <form className="flex flex-col max-w-lg">
+          <form className="flex flex-col w-full max-w-xs md:max-w-xl">
+            <label>Nome Completo:</label>
+            <input className="bg-white px-2 p-1 text-black rounded-md mb-3 maxlenth" name="inpNome" />
+
+            <label>Telefone:</label>
+            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpTelefone" />
+
             <label>Email:</label>
-            <input name="inpEmail" />
+            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpEmail" />
 
             <label>Mensagem:</label>
-            <input name="inpMensagem"/>
+            <textarea className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpMensagem"/>
 
-            <button type="submit">Enviar</button>
+            <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md" type="submit">Enviar</button>
           </form>
         </div>
 

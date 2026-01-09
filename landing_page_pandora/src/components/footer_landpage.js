@@ -17,8 +17,8 @@ export default function Footer_landpage() {
                 height={50} />
             </div>
             <div className="flex flex-row justify-between space-x-6">
-                <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(96) 98220-7455</p></div>
-                <div className="flex flex-row space-x-3"><FaPhone /><p>(96) 3538-6839</p></div>
+                <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(11) 96172-2824</p></div>
+                <div className="flex flex-row space-x-3"><FaPhone /><p>(11) 4638-4001</p></div>
             </div>
         </div>
         <div className="flex flex-row space-y-5 justify-center">

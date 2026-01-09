@@ -9,7 +9,14 @@ export default function Navbar_landpage() {
       flex flex-row justify-around items-center 
       space-y-4 border-b-4 
       border-[#F4C317]">
-        <div className="">
+        <div className="md:hidden">
+          <Image 
+          src="/icon/ptextil.png" 
+          alt="P de Pandora" 
+          width={100}
+          height={100} />
+        </div>
+        <div className="hidden md:flex">
           <Image 
           src="/icon/pandoratextil.jpeg" 
           alt="Logo da Pandora" 

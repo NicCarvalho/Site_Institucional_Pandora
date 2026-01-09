@@ -11,7 +11,7 @@ export default function Footer_landpage() {
         <div className="flex flex-row justify-around items-center border-b-2">
             <div>
                 <Image
-                src="/icon/pandoratextil.jpeg"
+                src="/icon/ptextil.png"
                 alt="Logo da Pandora"
                 width={50}
                 height={50} />

@@ -55,16 +55,45 @@ export default function Home() {
 
       {/* Seção Produtos */}
 
-      <div>
+      <div className="text-black">
       Seção de produtos
       </div>
 
       {/* Seção Contato */}
 
-      <div className="w-full ">
+      <div className="flex flex-col size-full">
+        <div className="flex flex-col md:flex-row text-black justify-around
+        md:space-x-10">
+          <div className="flex flex-row items-center">
+            <div className="">
+              <Image 
+              src="/icon/ptextil.png"
+              alt="Logo da Pandora"
+              width={100}
+              height={100}
+              />
+            </div>
+            <div className="flex flex-col max-w-lg">
+              <h1>Fale Conosco</h1>
+              <p>Entre em contato conosco, peça um orçamento sem compromisso e descubra como podemos transformar o seu negócio hoje.</p>
+            </div>
+          </div>
+
+          <form className="flex flex-col max-w-lg">
+            <label>Email:</label>
+            <input name="inpEmail" />
+
+            <label>Mensagem:</label>
+            <input name="inpMensagem"/>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+
         <div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1095622845205!2d-46.35558309831287!3d-23.52856147832905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce7ad9d2dded4b%3A0xc81cc5ac08018643!2sPANDORA%20T%C3%8AXTIL!5e0!3m2!1spt-BR!2sbr!4v1767967784527!5m2!1spt-BR!2sbr" 
-        width={411} height={400}
+        className="min-w-full min-h-[400px]"
         />
         {/* width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" /> */}
         </div>

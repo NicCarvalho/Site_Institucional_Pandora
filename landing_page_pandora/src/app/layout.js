@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "PandoraTextil",
+  title: "Pandora Textil",
   description: "HomePage - Pandoratextil",
 };
 

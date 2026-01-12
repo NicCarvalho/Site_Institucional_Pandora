@@ -1,5 +1,7 @@
 import Produtos from "@/components/produtos";
 import Image from "next/image";
+import { FaWhatsapp } from 'react-icons/fa';
+import { FaPhone } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -31,7 +33,7 @@ export default function Home() {
 
       {/* Seção Sobre nós */}
 
-      <div className="py-20 overflow-x-hidden">
+      <div className="py-15 lg:py-20 overflow-x-hidden">
         <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center
           lg:-me-[15%]">
           <div className="text-black text-lg bg-[#F8F8F8]
@@ -60,7 +62,15 @@ export default function Home() {
 
       {/* Seção Produtos */}
 
-      <Produtos />
+      <div className="flex flex-col items-center">
+        <div><h1 className="text-black font-extrabold text-3xl
+        sm:text-4xl
+        lg:text-5xl">Nossos Produtos</h1></div>
+        <div><Produtos /></div>
+        <div className="flex flex-col"><h1 className="text-black font-bold text-lg my-3">Veja nosso<br/>
+        <button className="bg-[#06903B] text-white rounded-md mx-5 py-1">catálogo</button>
+        <br/>de cores</h1></div>
+      </div>
 
       {/* Seção Contato */}
 
@@ -68,23 +78,33 @@ export default function Home() {
         <div className="flex flex-col md:flex-row items-center justify-evenly py-10
         mx-20 md:space-x-10 space-y-8
         text-white">
-          <div className="flex flex-col items-center space-x-3 space-y-3
-          md:flex-row md:space-x-5">
-            <div className="bg-[rgba(255,255,255,0.95)] rounded-full">
-              <Image
-              src="/icon/ptextil.png"
-              alt="Logo da Pandora"
-              width={200}
-              height={200}
-              />
+          <div>
+            <div className="flex flex-col items-center space-x-3 space-y-3
+            md:flex-row md:space-x-5">
+              <div className="bg-[rgba(255,255,255,0.95)] rounded-full">
+                <Image
+                src="/icon/ptextil.png"
+                alt="Logo da Pandora"
+                width={200}
+                height={200}
+                />
+              </div>
+              <div className="flex flex-col max-w-lg">
+                <h1 className="text-[#F4C317] text-4xl font-semibold">Fale Conosco</h1>
+                <p className="text-justify md:text-left">Entre em contato conosco, peça um orçamento sem compromisso e descubra como podemos transformar o seu negócio hoje.</p>
+              </div>
             </div>
-            <div className="flex flex-col max-w-lg">
-              <h1 className="text-[#F4C317] text-4xl font-semibold">Fale Conosco</h1>
-              <p>Entre em contato conosco, peça um orçamento sem compromisso e descubra como podemos transformar o seu negócio hoje.</p>
+            <div>
+              <div className="flex flex-col sm:flex-row mt-5 items-start justify-center space-x-6">
+                <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%21%21%20Meu%20nome%20%C3%A9%20Gustavo%2C%20vamos%20fazer%20um%20or%C3%A7amento%3F">
+                  <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(11) 96172-2824</p></div>
+                </a>
+                <div className="flex flex-row space-x-3"><FaPhone /><p>(11) 4638-4001</p></div>
+              </div>
             </div>
           </div>
 
-          <form className="flex flex-col w-full max-w-xs md:max-w-xl">
+          <form className="flex flex-col w-full max-w-lg md:max-w-xl">
             <label>Nome Completo:</label>
             <input className="bg-white px-2 p-1 text-black rounded-md mb-3 maxlenth" name="inpNome" />
 

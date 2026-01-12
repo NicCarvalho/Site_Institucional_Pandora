@@ -12,13 +12,13 @@ export default function Home() {
         flex flex-col justify-center items-center">
           <div className="flex bg-[rgba(255,255,255,0.8)] 
             p-10 md:p-8
-            rounded-full md:rounded-lg space-y-4
+            rounded-full lg:rounded-lg space-y-4
             flex flex-col justify-center items-center">
-            <div className="hidden md:flex flex-col">
+            <div className="hidden lg:flex flex-col">
               <h1 className="text-[#06903B] text-6xl font-bold">Sinônimo de Qualidade!</h1>
               <p className="text-black text-xl font-semibold">Aviamentos têxteis de qualidade para você em poliéster e algodão!</p>
             </div>
-            <div className="md:hidden flex flex-row items-end">
+            <div className="lg:hidden flex flex-row items-end">
                 <Image
                   src="/images/pandoratextil_semfundo.png"
                   alt="P de Pandora"
@@ -32,12 +32,16 @@ export default function Home() {
       {/* Seção Sobre nós */}
 
       <div className="py-20 overflow-x-hidden">
-        <div className="flex flex-col md:flex-row justify-center md:justify-between items-center
-        md:pl-40 md:-me-50">
-          <div className="text-black text-lg
-          m-8 p-6 md:max-w-lg max-h-fit
+        <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center
+          lg:-me-[15%]">
+          <div className="text-black text-lg bg-[#F8F8F8]
+          xl:ml-25 xl:max-w-lg
+          lg:ml-15 lg:max-w-md
+          md:max-w-160
+          max-w-120 max-h-fit
+          m-8 p-6
           flex flex-col 
-          border-2 rounded-lg gap-3">
+          shadow-xl/20 rounded-lg gap-3">
             <p>A PANDORA TÊXTIL foi fundada em Março de 2011, unindo o conhecimento técnico e comercial, acumulado ao longo de 20 anos, para atender ao público com uma estrutura enxuta,  ágil e focada em atingir padrões de excelência.</p>
             <p>Desta forma,  nos sentimos seguros em oferecer os nossos produtos aos mais variados clientes, com alta qualidade, agilidade e preço justo.</p>
             <p>Isto faz com que nossa empresa, sinta-se confiante e  capaz de ampliar seu mercado.</p>
@@ -45,11 +49,11 @@ export default function Home() {
             <p>Com profissionais de alto desempenho, que lutam pelo crescimento pessoal e empresarial, zelamos pela melhoria contínua de nossos produtos.</p>
           </div>
           <div>
-            <Image
+            <Image className="lg:max-w-150 xl:max-w-200 lg:mask-l-from-60%"
             src="/images/foto_pandora.jpg"
             alt="Foto da Loja Pandora Textil"
-            width={800}
-            height={800} />
+            width={1200}
+            height={1200} />
           </div>
         </div>
       </div>
@@ -60,17 +64,18 @@ export default function Home() {
 
       {/* Seção Contato */}
 
-      <div className="flex flex-col size-full">
+      <div className="flex flex-col size-full bg-[#0E4935]">
         <div className="flex flex-col md:flex-row items-center justify-evenly py-10
-        md:space-x-10
-        text-white bg-[#0E4935]">
-          <div className="flex flex-row items-center space-x-3 md:space-x-5">
+        mx-20 md:space-x-10 space-y-8
+        text-white">
+          <div className="flex flex-col items-center space-x-3 space-y-3
+          md:flex-row md:space-x-5">
             <div className="bg-[rgba(255,255,255,0.95)] rounded-full">
-              <Image 
+              <Image
               src="/icon/ptextil.png"
               alt="Logo da Pandora"
-              width={100}
-              height={100}
+              width={200}
+              height={200}
               />
             </div>
             <div className="flex flex-col max-w-lg">

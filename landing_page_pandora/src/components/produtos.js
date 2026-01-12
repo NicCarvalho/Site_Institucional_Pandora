@@ -4,18 +4,19 @@ import Image from "next/image";
 
 export default function Produtos() {
   return (
-    <div className="flex text-[#020232] font-extrabold text-3xl p-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3">
+    <div className="flex justify-center text-[#020232] font-extrabold text-3xl p-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
             
             <div className="flex flex-col justify-center
                 px-5 py-10 space-y-5
-                border-2 rounded-3xl">
+                bg-[#F8F8F8] rounded-3xl shadow-xl">
                 <Image
                 src="/images/foto_pandora.jpg"
                 alt="Foto de Produtos Pandora Textil"
                 width={300}
                 height={350} />
                 <h1>Viés de<br/>Algodão</h1>
+                <button className="bg-[#06903B] text-white rounded-md mx-5 py-1">Ver mais</button>
             </div>
 
             <div className="flex flex-col justify-center

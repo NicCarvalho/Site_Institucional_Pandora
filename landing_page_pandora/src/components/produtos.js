@@ -30,8 +30,7 @@ export default function Produtos() {
                 width={300}
                 height={350} />
                 <h1>Alça de<br/>Algodão</h1>
-                <button className="flex justify-center items-center space-x-3
-                bg-[#06903B] text-white rounded-md mx-5 py-1"> <FaPlus className="-ml-2" /><p>Ver mais</p> </button>
+                <button className="bg-[#06903B] text-white rounded-md mx-5 py-1">Ver mais</button>
             </div>
 
             <div className="flex flex-col justify-center

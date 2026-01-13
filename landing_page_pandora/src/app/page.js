@@ -67,9 +67,16 @@ export default function Home() {
         sm:text-4xl
         lg:text-5xl">Nossos Produtos</h1></div>
         <div><Produtos /></div>
-        <div className="flex flex-col"><h1 className="text-black font-bold text-lg my-3">Veja nosso<br/>
-        <button className="bg-[#06903B] text-white rounded-md mx-5 py-1">catálogo</button>
-        <br/>de cores</h1></div>
+        <div className="flex flex-col items-center text-black font-bold text-lg my-3
+        sm:text-xl md:text-2xl lg:text-3xl">
+          <div>
+            <h1 className="">Veja nosso</h1>
+          </div>
+          <button className="p-2 bg-[#06903B] text-white rounded-md mx-5 py-1">catálogo</button>
+          <div>
+            <h1>de cores</h1>
+          </div>
+        </div>
       </div>
 
       {/* Seção Contato */}

@@ -1,10 +1,11 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar_landpage() {
   return (
-    <div>
+    <div id="home">
       <nav className="bg-white text-black
       flex flex-row justify-around items-center 
       space-y-4 border-b-4 
@@ -24,10 +25,10 @@ export default function Navbar_landpage() {
           height={100} />
         </div>
         <div className="flex flex-row space-x-10 font-semibold">
-          <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Home</button>
-            <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Sobre Nós</button>
-            <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Produtos</button>
-            <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Contato</button>
+            <Link href="/#home"> <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Home</button> </Link>
+            <Link href="/#sobre_nos"> <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Sobre Nós</button> </Link>
+            <Link href="/#produtos"> <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Produtos</button> </Link>
+            <Link href="/#contato"> <button className="transition duration-300 hover:-translate-y-1 hover:scale-150 hover:text-[#06903B]">Contato</button> </Link>
         </div>
       </nav>
     </div>

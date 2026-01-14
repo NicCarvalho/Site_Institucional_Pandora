@@ -1,9 +1,12 @@
+import Catalogo from "@/components/catalogo";
+import ContactForm from "@/components/contactform";
 import Produtos from "@/components/produtos";
 import Image from "next/image";
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaPhone } from "react-icons/fa";
 
 export default function Home() {
+
   return (
     <div className="bg-white">
 
@@ -32,8 +35,9 @@ export default function Home() {
       
 
       {/* Seção Sobre nós */}
-
+      
       <div className="py-15 lg:py-20 overflow-x-hidden">
+        <hr id="sobre_nos" className="hidden" name="ancora" />
         <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center
           lg:-me-[15%]">
           <div className="text-black text-lg bg-[#F8F8F8]
@@ -62,24 +66,27 @@ export default function Home() {
 
       {/* Seção Produtos */}
 
+      <hr id="produtos" className="hidden" name="ancora" />
+
       <div className="flex flex-col items-center">
         <div><h1 className="text-black font-extrabold text-3xl
         sm:text-4xl
         lg:text-5xl">Nossos Produtos</h1></div>
         <div><Produtos /></div>
-        <div className="flex flex-col items-center text-black font-bold text-lg my-3
+        <div className="flex flex-col items-center text-black font-bold text-lg my-3 md:space-y-2
         sm:text-xl md:text-2xl lg:text-3xl">
           <div>
-            <h1 className="">Veja nosso</h1>
+            <h1 className="">Veja nosso catálogo de cores</h1>
           </div>
-          <button className="p-2 bg-[#06903B] text-white rounded-md mx-5 py-1">catálogo</button>
-          <div>
-            <h1>de cores</h1>
-          </div>
+
+          <Catalogo />
+
         </div>
       </div>
 
       {/* Seção Contato */}
+
+      <hr id="contato" className="hidden" name="ancora" />
 
       <div className="flex flex-col size-full bg-[#0E4935]">
         <div className="flex flex-col md:flex-row items-center justify-evenly py-10
@@ -111,7 +118,8 @@ export default function Home() {
             </div>
           </div>
 
-          <form className="flex flex-col w-full max-w-lg md:max-w-xl">
+          {/* <form action="https://formspree.io/f/mgooeqep" method="POST" 
+          className="flex flex-col w-full max-w-lg md:max-w-xl">
             <label>Nome Completo:</label>
             <input className="bg-white px-2 p-1 text-black rounded-md mb-3 maxlenth" name="inpNome" />
 
@@ -125,7 +133,10 @@ export default function Home() {
             <textarea className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpMensagem"/>
 
             <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md" type="submit">Enviar</button>
-          </form>
+          </form> */}
+
+          <ContactForm />
+
         </div>
 
 

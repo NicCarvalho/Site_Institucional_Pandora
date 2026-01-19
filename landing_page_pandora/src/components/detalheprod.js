@@ -18,9 +18,8 @@ export default function Detalheprod({produtoId}) {
 
     return (
         <div>
-            {showOverlay && descricao && (
-                <div className="fixed inset-0 bg-[rgba(255,255,25,0.8)] flex justify-center items-center z-40">
-                    <div className="flex flex-col items-center bg-white w-90 h-120 p-5 rounded-xl">
+                <div className="">
+                    <div className="">
                         {/*  botão de voltar */}
                         <div className="self-end">
                             <button onClick={() => closeProdDetails()}>
@@ -71,7 +70,6 @@ export default function Detalheprod({produtoId}) {
 
                     </div>
                 </div>
-            )}
         </div>
     )
 }

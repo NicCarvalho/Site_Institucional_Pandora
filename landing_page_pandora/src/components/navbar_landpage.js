@@ -34,17 +34,17 @@ export default function Navbar_landpage() {
 
         {/* Menu Desktop */}
         <div className="hidden md:flex flex-row h-full font-semibold">
-            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100">
-              <Link href="/#home">      <button className="transition duration-300 hover:-translate-y-1/15 hover:text-[#06903B]">Home</button> </Link>
+            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100 hover:-translate-y-1/25 hover:text-[#06903B]">
+              <Link href="/#home">      <button className="">Home</button></Link>
             </div>
-            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100">
-              <Link href="/#sobre_nos"> <button className="transition duration-300 hover:-translate-y-1/15 hover:text-[#06903B]">Sobre Nós</button> </Link>
+            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100 hover:-translate-y-1/25 hover:text-[#06903B]">
+              <Link href="/#sobre_nos"> <button className="">Sobre Nós</button> </Link>
             </div>
-            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100">
-              <Link href="/#produtos">  <button className="transition duration-300 hover:-translate-y-1/15 hover:text-[#06903B]">Produtos</button> </Link>
+            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100 hover:-translate-y-1/25 hover:text-[#06903B]">
+              <Link href="/#produtos">  <button className="">Produtos</button> </Link>
             </div>
-            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100">
-              <Link href="/#contato">   <button className="transition duration-300 hover:-translate-y-1/15 hover:text-[#06903B]">Contato</button> </Link>
+            <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100 hover:-translate-y-1/25 hover:text-[#06903B]">
+              <Link href="/#contato">   <button className="">Contato</button> </Link>
             </div>
         </div>
 

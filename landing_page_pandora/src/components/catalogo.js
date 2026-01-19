@@ -31,44 +31,31 @@ export default function Catalogo() {
         }
     }, [state.succeeded]);
 
-    // if (state.succeeded) {
-    //     setShowOverlay(false);
-    // }
-
-    // if (state.succeeded) {
-    //   return (
-    //   <p>Baixando Catálogo</p>
-    //   );
-    // }
-
     return (
         <div>
             <a>
                 <button onClick={handleContactForm} className="p-2 bg-[#06903B] text-white rounded-md mx-5 py-1">Ver catálogo</button>
             </a>
             {showOverlay && (
-                <div className="fixed inset-0 bg-[rgba(255,255,255,0.3)] flex items-center justify-center z-50">
-                    <div className="flex flex-col max-w-90 px-8 py-10 rounded-xl justify-center items-end
-                    md:max-w-170 lg:max-w-300
-                    text-white bg-[#0E4935]">
+                <div className="fixed inset-0 bg-[rgba(255,255,255,0.5)] flex items-center justify-center z-50">
+                    <div className="flex flex-col items-end rounded-xl bg-[#0E4935] text-white
+                    px-6 py-9 text-base font-normal">
                         <div>
                             {/* Botao de fechar */}
                             <button onClick={() => setShowOverlay(false)}>
-                                <IoClose/>
+                                <IoClose className="active:text-[#f00] active:bg-[rgba(255,255,255,0)] hover:text-white hover:bg-black  rounded-full"/>
                             </button>
                         </div>
-                        <div className="flex flex-col space-y-3 font-medium sm:font-normal
-                        md:flex-row md:font-light md:space-x-9 lg:space-x-10
-                        lg:space-x-2">
-                            <div className="md:space-y-1">
-                                <h1 className="text-xl font-semibold">Ops... antes de baixar nosso catálogo</h1>
-                                <p className="text-md">Deixe seu contato</p>
-                            </div>
+                        <div className="flex flex-col md:flex-row space-y-3 md:space-x-10">
                             <div>
+                                <h1 className="font-semibold text-lg">Ops... antes de baixar nosso catálogo</h1>
+                                <p className="font-medium">Deixe seu contato</p>
+                            </div>
+                            <div className="md:min-w-1/2">
                                 {/* Formulário igual ao da página princípal, mas com um css diferente */}
 
                                 <form onSubmit={handleSubmit}
-                                    className="flex flex-col w-full max-w-lg md:max-w-xl text-base">
+                                    className="flex flex-col">
                                     <label>Nome Completo:</label>
                                     <input className="bg-white px-2 p-1 text-black rounded-md mb-3" 
                                     id="name"

@@ -13,18 +13,18 @@ export default function Home() {
       {/* Seção da Home */}
 
         <div className="bg-[url(/images/foto_tear.jpg)] bg-cover
-        min-h-[82dvh]
+        min-h-[95.6dvh] md:min-h-[92.6dvh]
         flex flex-col justify-center items-center">
           <div className="flex bg-[rgba(255,255,255,0.8)] 
             p-10 md:p-8
-            rounded-full lg:rounded-lg space-y-4
+            rounded-full space-y-4
             flex flex-col justify-center items-center">
-            <div className="hidden lg:flex flex-col">
+            {/* <div className="hidden lg:flex flex-col">
               <h1 className="text-[#06903B] text-6xl font-bold">Sinônimo de Qualidade!</h1>
               <p className="text-black text-xl font-semibold">Aviamentos têxteis de qualidade para você em poliéster e algodão!</p>
-            </div>
-            <div className="lg:hidden flex flex-row items-end">
-                <Image
+            </div> */}
+            <div className="flex flex-row items-end">
+                <Image className="max-w-63"
                   src="/images/pandoratextil_semfundo.png"
                   alt="P de Pandora"
                   width={250}

@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nome": "Viés de Algodão",
+        "material": "Material 100% em algodão ou 75% algodão e 25% de poliester*",
+        "calandra": "Engomado ou reforçado sem goma",
+        "caracteristica": "Desenho em escamas ou trançado",
+        "larguras": "17, 25, 30 e 40mm",
+        "cores": "Disponível em diversas cores"
+    },
+    {
+        "id": 2,
+        "nome": "Alça de Algodão",
+        "material": "Material 100% em algodão",
+        "calandra": "Engomado, engomado reforçado ou reforçado sem goma",
+        "caracteristica": null,
+        "larguras": "25, 30, 33, 40 e 50mm",
+        "cores": "Disponível em diversas cores"
+    },
+    {
+        "id": 3,
+        "nome": "Alça Canelada",
+        "material": "Material 100% em algodão ou com até 30% de poliéster",
+        "calandra": "Sem goma",
+        "caracteristica": "Alta resistência e durabilidade",
+        "larguras": "30, 40 e 50mm",
+        "cores": "Disponível em diversas cores"
+    },
+    {
+        "id": 4,
+        "nome": "Alça de Algodão Especial",
+        "material": "Material 100% em algodão",
+        "calandra": "Reforçado sem goma",
+        "caracteristica": "Alta durabilidade e resistência mecânica",
+        "larguras": "30, 40, 50 e 80mm",
+        "cores": "Disponível em diversas cores"
+    },
+    {
+        "id": 5,
+        "nome": "Gorgurão de Reforço",
+        "material": "Material 100% em poliéster",
+        "calandra": "Engomado, reforçado engomado ou reforçado sem goma",
+        "caracteristica": "Possuí vinco no centro",
+        "larguras": "20, 22, 25, 30 e 33mm",
+        "cores": "Disponível em diversas cores"
+    },
+    {
+        "id": 6,
+        "nome": "Fita Galão",
+        "material": "Material 100% em poliéster",
+        "calandra": "Engomado ou sem goma",
+        "caracteristica": "Alta resistência mecânica",
+        "larguras": "10, 15, 20, 25, 30 e 40mm",
+        "cores": "Disponível em diversas cores e combinações"
+    },
+    {
+        "id": 7,
+        "nome": "Alça Premium (Alça CHIC)",
+        "material": "Material 100% em poliéster",
+        "calandra": "Engomado ou sem goma",
+        "caracteristica": "Alta resistência e durabilidade",
+        "larguras": "20, 25, 30 e 40mm",
+        "cores": "Disponível em diversas cores e combinações"
+    },
+    {
+        "id": 8,
+        "nome": "Alça Premium Sublimação",
+        "material": "Material 100% em poliéster",
+        "calandra": "Sem  Goma",
+        "caracteristica": "Alta resistência a temperaturas e facilidade para estampar",
+        "larguras": "20, 25, 30 e 40mm",
+        "cores": "Disponível em diversas cores"
+    }
+]

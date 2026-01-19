@@ -56,14 +56,16 @@ export default function Home() {
           max-w-120 max-h-fit
           m-8 p-6
           flex flex-col 
-          shadow-xl/20 rounded-lg gap-3">
+          shadow-xl/20 rounded-lg gap-3"
+          data-aos="flip-right"
+          data-aos-delay="200">
             <p>A PANDORA TÊXTIL foi fundada em Março de 2011, unindo o conhecimento técnico e comercial, acumulado ao longo de 20 anos, para atender ao público com uma estrutura enxuta,  ágil e focada em atingir padrões de excelência.</p>
             <p>Desta forma,  nos sentimos seguros em oferecer os nossos produtos aos mais variados clientes, com alta qualidade, agilidade e preço justo.</p>
             <p>Isto faz com que nossa empresa, sinta-se confiante e  capaz de ampliar seu mercado.</p>
             <p>Muito trabalho, dedicação, seriedade e transparência, esses são os valores que fazem parte do nosso dia-a-dia.</p>
             <p>Com profissionais de alto desempenho, que lutam pelo crescimento pessoal e empresarial, zelamos pela melhoria contínua de nossos produtos.</p>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="fade-left" data-aos-delay="150">
             <Image className="lg:max-w-150 xl:max-w-200 lg:mask-l-from-60%"
             src="/images/foto_pandora.jpg"
             alt="Foto da Loja Pandora Textil"

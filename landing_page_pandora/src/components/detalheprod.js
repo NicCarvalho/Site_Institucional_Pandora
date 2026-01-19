@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
 import descricaoData from "@/data/descricao.json";
 import Image from "next/image";
@@ -9,12 +8,6 @@ import { IoClose } from "react-icons/io5";
 export default function Detalheprod({produtoId}) {
     // constante do produto
     const descricao = descricaoData.find(d => d.id === produtoId);
-
-    const [showOverlay, setShowOverlay]  = useState(false);
-
-    const handleContactForm = () => {
-        setShowOverlay(true);
-    };
 
     const checkValuable = (campo) => {
         if (!descricao || descricao[campo] == null || descricao === "") {
@@ -25,16 +18,12 @@ export default function Detalheprod({produtoId}) {
 
     return (
         <div>
-            <div>
-                <button onClick={handleContactForm} className="flex justify-center items-center space-x-3
-                bg-[#06903B] text-white rounded-md mx-5 py-1"> <FaPlus className="-ml-2" /><p>Ver mais</p> </button>
-            </div>
             {showOverlay && descricao && (
                 <div className="fixed inset-0 bg-[rgba(255,255,25,0.8)] flex justify-center items-center z-40">
                     <div className="flex flex-col items-center bg-white w-90 h-120 p-5 rounded-xl">
                         {/*  botão de voltar */}
                         <div className="self-end">
-                            <button onClick={() => setShowOverlay(false)}>
+                            <button onClick={() => closeProdDetails()}>
                                 <IoClose className="size-6 active:text-[#f00] active:bg-[rgba(255,255,255,0)] hover:text-white hover:bg-black rounded-full" />
                             </button>
                         </div>

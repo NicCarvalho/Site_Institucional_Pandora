@@ -1,11 +1,20 @@
+"use client";
+
 import Catalogo from "@/components/catalogo";
 import ContactForm from "@/components/contactform";
 import Produtos from "@/components/produtos";
 import Image from "next/image";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FaWhatsapp } from 'react-icons/fa';
 import { FaPhone } from "react-icons/fa";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
 
   return (
     <div className="bg-white">
@@ -54,7 +63,7 @@ export default function Home() {
             <p>Muito trabalho, dedicação, seriedade e transparência, esses são os valores que fazem parte do nosso dia-a-dia.</p>
             <p>Com profissionais de alto desempenho, que lutam pelo crescimento pessoal e empresarial, zelamos pela melhoria contínua de nossos produtos.</p>
           </div>
-          <div>
+          <div data-aos="fade-left">
             <Image className="lg:max-w-150 xl:max-w-200 lg:mask-l-from-60%"
             src="/images/foto_pandora.jpg"
             alt="Foto da Loja Pandora Textil"

@@ -87,15 +87,27 @@ export default function Home() {
         </div>
 
         <div><Produtos /></div>
-        <div className="flex flex-col w-full items-center text-white bg-[#020232] font-bold text-lg py-3 md:space-y-2
-        sm:text-xl md:text-2xl lg:text-3xl">
-          <div>
-            <h1 className="">Veja nosso catálogo de cores</h1>
+
+        <div className="flex flex-col md:flex-row justify-around items-center w-full bg-[#020232] 
+          py-20 space-y-10">
+          <div className="flex flex-col items-center text-white font-bold text-lg md:space-y-2
+          sm:text-xl md:text-2xl lg:text-3xl">
+            <div>
+              <h1 className="">Veja nosso catálogo de cores</h1>
+            </div>
+            <Catalogo />
           </div>
-
-          <Catalogo />
-
+          <div>
+              <Image
+              src="/images/catalogo_outra_empresa.png"
+              alt=""
+              width={200}
+              height={200}
+              />
+          </div>
         </div>
+
+
       </div>
 
       {/* Seção Contato */}

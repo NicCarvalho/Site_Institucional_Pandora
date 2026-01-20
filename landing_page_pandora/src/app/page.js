@@ -80,11 +80,14 @@ export default function Home() {
       <hr id="produtos" className="hidden" name="ancora" />
 
       <div className="flex flex-col items-center">
-        <div><h1 className="text-black font-extrabold text-3xl
-        sm:text-4xl
-        lg:text-5xl">Nossos Produtos</h1></div>
+        <div>
+          <h1 className="text-black font-extrabold text-3xl
+          sm:text-4xl
+          lg:text-5xl">Nossos Produtos</h1>
+        </div>
+
         <div><Produtos /></div>
-        <div className="flex flex-col items-center text-black font-bold text-lg my-3 md:space-y-2
+        <div className="flex flex-col w-full items-center text-white bg-[#020232] font-bold text-lg py-3 md:space-y-2
         sm:text-xl md:text-2xl lg:text-3xl">
           <div>
             <h1 className="">Veja nosso catálogo de cores</h1>

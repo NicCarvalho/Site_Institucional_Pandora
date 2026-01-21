@@ -3,6 +3,8 @@
 import { useState, useEffect, useEffectEvent } from "react";
 import { IoClose } from "react-icons/io5";
 import { useForm, ValidationError } from '@formspree/react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Catalogo() {
@@ -34,11 +36,12 @@ export default function Catalogo() {
     return (
         <div>
             <a>
-                <button onClick={handleContactForm} className="p-2 bg-[#06903B] text-white rounded-md mx-5 py-1">Ver catálogo</button>
+                <button onClick={handleContactForm} className="transition duration-300 hover:scale-115 animate-bounce
+                p-2 bg-[#0E4935] text-white rounded-md mx-5 py-1">Ver catálogo</button>
             </a>
             {showOverlay && (
                 <div className="fixed inset-0 bg-[rgba(255,255,255,0.5)] flex items-center justify-center z-50">
-                    <div className="flex flex-col items-end rounded-xl bg-[#0E4935] text-white
+                    <div data-aos="fade-up" data-aos-delay="150" className="flex flex-col items-end rounded-xl bg-[#0E4935] text-white
                     px-6 py-9 text-base font-normal">
                         <div>
                             {/* Botao de fechar */}

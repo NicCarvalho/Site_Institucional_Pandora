@@ -79,7 +79,7 @@ export default function Home() {
 
       <hr id="produtos" className="hidden" name="ancora" />
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center border-b-5">
         <div>
           <h1 className="text-black font-extrabold text-3xl
           sm:text-4xl
@@ -88,17 +88,18 @@ export default function Home() {
 
         <div><Produtos /></div>
 
-        <div className="flex flex-col md:flex-row justify-around items-center w-full bg-[#020232] 
+        <div className="flex flex-col md:flex-row justify-around items-center w-full h-180 md:h-120 bg-black bg-cover 
           py-20 space-y-10">
-          <div className="flex flex-col items-center text-white font-bold text-lg md:space-y-2
+          <div className="flex flex-col items-center bg-[url(/images)]
+          text-white font-bold text-lg space-y-4
           sm:text-xl md:text-2xl lg:text-3xl">
             <div>
               <h1 className="">Veja nosso catálogo de cores</h1>
             </div>
             <Catalogo />
           </div>
-          <div>
-              <Image
+          <div className="bg-[url(/images)]">
+              <Image className="h-100 w-100"
               src="/images/catalogo_outra_empresa.png"
               alt=""
               width={200}

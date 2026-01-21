@@ -2,6 +2,7 @@
 
 import { FaPlus } from "react-icons/fa";
 import descricaoData from "@/data/descricao.json";
+import imagesData from "@/data/images.json";
 import Image from "next/image";
 import { IoClose } from "react-icons/io5";
 
@@ -9,13 +10,23 @@ export default function Detalheprod({produtoId}) {
     // constante do produto
     const descricao = descricaoData.find(d => d.id === produtoId);
 
+    // constante das imagens
+    const images = imagesData.find(img => img.descid === produtoId);
+
+    const checkImage = (img) => {
+        if (!images || images[img] === null || images[img] === "") {
+            return `/images/foto_tear.jpg`;
+        }
+        return `/images/mostruario/${images[img]}`;
+    }
+
     const checkValuable = (campo) => {
         if (!descricao || descricao[campo] == null || descricao === "") {
             return "hidden";
         }
         return "";
     }
-
+    
     return (
         <div>
             {/* Conteúdo da caixa */}
@@ -25,18 +36,26 @@ export default function Detalheprod({produtoId}) {
                     </div>
 
                     <div className="flex flex-col overflow-none space-y-3">
-                        <ul className="flex overflow-x-auto snap-x space-x-3 w-80 first:rounded-l-xl">
-                            <div>
-                                <Image className="max-h-40 min-w-60"
-                                src="/images/foto_tear.jpg"
+                        <ul className="flex items-center overflow-x-scroll -mr-20 snap-x space-x-2 w-80 first:rounded-l-xl ">
+                            <div className="h-40 min-w-50">
+                                <Image className="size-full"
+                                src={checkImage("imagem1")}
                                 alt="foto do tear"
                                 width={300}
                                 height={300}
                                 />
                             </div>
-                            <div>
-                                <Image className="max-h-40 min-w-60"
-                                src="/images/foto_tear.jpg"
+                            <div className="h-40 min-w-50">
+                                <Image className="size-full"
+                                src={checkImage("imagem2")}
+                                alt="foto do tear"
+                                width={300}
+                                height={300}
+                                />
+                            </div>
+                            <div className="h-40 min-w-50">
+                                <Image className="size-full"
+                                src={checkImage("imagem3")}
                                 alt="foto do tear"
                                 width={300}
                                 height={300}

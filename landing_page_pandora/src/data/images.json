@@ -5,5 +5,54 @@
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""
+    },
+    {
+        "id": 2,
+        "descid": 2,
+        "imagem1": "",
+        "imagem2": "",
+        "imagem3": ""
+    },
+    {
+        "id": 3,
+        "descid": 3,
+        "imagem1": "",
+        "imagem2": "",
+        "imagem3": ""
+    },
+    {
+        "id": 4,
+        "descid": 4,
+        "imagem1": "",
+        "imagem2": "",
+        "imagem3": ""
+    },
+    {
+        "id": 5,
+        "descid": 5,
+        "imagem1": "",
+        "imagem2": "",
+        "imagem3": ""
+    },
+    {
+        "id": 6,
+        "descid": 6,
+        "imagem1": "",
+        "imagem2": "",
+        "imagem3": ""
+    },
+    {
+        "id": 7,
+        "descid": 7,
+        "imagem1": "CHIC_40_Ouro_Lateral2.jpeg",
+        "imagem2": "CHIC_40_Pink_Cima.jpeg",
+        "imagem3": "CHIC_40_Royal_Cima.jpeg"
+    },
+    {
+        "id": 8,
+        "descid": 8,
+        "imagem1": "",
+        "imagem2": "",
+        "imagem3": ""
     }
 ]

@@ -36,8 +36,8 @@ export default function Detalheprod({produtoId}) {
                     </div>
 
                     <div className="flex flex-col overflow-none space-y-3">
-                        <ul className="flex items-center overflow-x-scroll -mr-20 snap-x space-x-2 w-80 first:rounded-l-xl ">
-                            <div className="h-40 min-w-50">
+                        <ul className="flex items-center justify-start overflow-x-scroll snap-x space-x-2 w-80">
+                            <div className="h-40 min-w-50 mx-15 snap-center">
                                 <Image className="size-full"
                                 src={checkImage("imagem1")}
                                 alt="foto do tear"
@@ -45,7 +45,7 @@ export default function Detalheprod({produtoId}) {
                                 height={300}
                                 />
                             </div>
-                            <div className="h-40 min-w-50">
+                            <div className="h-40 min-w-50 mx-15 snap-center">
                                 <Image className="size-full"
                                 src={checkImage("imagem2")}
                                 alt="foto do tear"
@@ -53,7 +53,7 @@ export default function Detalheprod({produtoId}) {
                                 height={300}
                                 />
                             </div>
-                            <div className="h-40 min-w-50">
+                            <div className="h-40 min-w-50 mx-15 snap-center">
                                 <Image className="size-full"
                                 src={checkImage("imagem3")}
                                 alt="foto do tear"

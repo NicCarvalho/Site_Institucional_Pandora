@@ -1,21 +1,22 @@
 "use client"
 
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default ContactForm;
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("mgooeqep");
+
   if (state.succeeded) {
       return <p>Enviado com Sucesso!!!</p>;
   }
   
   return (
-    <form onSubmit={handleSubmit}
+    <form id="contact-form" onSubmit={handleSubmit}
           className="flex flex-col w-full max-w-lg md:max-w-xl">
             <label>Nome Completo:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-md mb-3" 
+            <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3"
+            placeholder="Seu Nome" 
             id="name"
             type="name"
             name="Nome" />
@@ -26,7 +27,8 @@ function ContactForm() {
             />
 
             <label>Telefone:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" 
+            <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3" 
+            placeholder="(xx) xxxxx-xxxx"
             id="phone"
             type="phone"
             name="Telefone" />
@@ -37,7 +39,8 @@ function ContactForm() {
             />
 
             <label>Email:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" 
+              <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3" 
+            placeholder="Seu melhor email"
             id="email"
             type="email"
             name="Email" />
@@ -48,7 +51,8 @@ function ContactForm() {
             />
 
             <label>Mensagem:</label>
-            <textarea className="bg-white px-2 p-1 text-black rounded-lg mb-3" 
+            <textarea className="bg-white px-3 p-1 text-black text-sm rounded-2xl mb-3 resize-none"
+            placeholder="Sua mensagem..."
             id="message"
             type="message"
             name="Mensagem"/>

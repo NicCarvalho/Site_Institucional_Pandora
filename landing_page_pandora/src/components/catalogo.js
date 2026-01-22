@@ -1,9 +1,8 @@
 "use client"
 
-import { useState, useEffect, useEffectEvent } from "react";
+import { useState, useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { useForm, ValidationError } from '@formspree/react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
@@ -33,6 +32,8 @@ export default function Catalogo() {
         }
     }, [state.succeeded]);
 
+
+
     return (
         <div>
             <a>
@@ -50,6 +51,7 @@ export default function Catalogo() {
                             </button>
                         </div>
                         <div className="flex flex-col md:flex-row space-y-3 md:space-x-10">
+
                             <div>
                                 <h1 className="font-semibold text-lg">Ops... antes de baixar nosso catálogo</h1>
                                 <p className="font-medium">Deixe seu contato</p>
@@ -57,10 +59,11 @@ export default function Catalogo() {
                             <div className="md:min-w-1/2">
                                 {/* Formulário igual ao da página princípal, mas com um css diferente */}
 
-                                <form onSubmit={handleSubmit}
+                                <form id="contact-form" onSubmit={handleSubmit}
                                     className="flex flex-col">
                                     <label>Nome Completo:</label>
-                                    <input className="bg-white px-2 p-1 text-black rounded-md mb-3" 
+                                    <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3"
+                                    placeholder="Seu Nome"
                                     id="name"
                                     type="name"
                                     name="Nome" />
@@ -71,7 +74,8 @@ export default function Catalogo() {
                                     />
 
                                     <label>Telefone:</label>
-                                    <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" 
+                                    <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3"
+                                    placeholder="(xx) xxxxx-xxxx"
                                     id="phone"
                                     type="phone"
                                     name="Telefone" />
@@ -82,7 +86,8 @@ export default function Catalogo() {
                                     />
 
                                     <label>Email:</label>
-                                    <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" 
+                                    <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3"
+                                    placeholder="Seu Melhor Email" 
                                     id="email"
                                     type="email"
                                     name="Email" />
@@ -93,7 +98,8 @@ export default function Catalogo() {
                                     />
 
                                     <label>Mensagem:</label>
-                                    <textarea className="bg-white px-2 p-1 text-black rounded-lg mb-3" 
+                                    <textarea className="bg-white px-3 p-1 text-black text-sm rounded-2xl mb-3 resize-none"
+                                    placeholder="Sua mensagem..." 
                                     id="message"
                                     type="message"
                                     name="Mensagem"/>

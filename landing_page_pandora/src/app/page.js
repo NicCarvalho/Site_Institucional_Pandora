@@ -56,7 +56,8 @@ export default function Home() {
           max-w-120 max-h-fit
           m-8 p-6
           flex flex-col 
-          shadow-xl/20 rounded-lg gap-3"
+          shadow-xl/20 rounded-lg gap-3
+          border border-[#020232]"
           data-aos="flip-right"
           data-aos-delay="200">
             <p>A PANDORA TÊXTIL foi fundada em Março de 2011, unindo o conhecimento técnico e comercial, acumulado ao longo de 20 anos, para atender ao público com uma estrutura enxuta,  ágil e focada em atingir padrões de excelência.</p>
@@ -88,13 +89,15 @@ export default function Home() {
 
         <div><Produtos /></div>
 
-        <div className="flex flex-col md:flex-row justify-around items-center w-full h-180 md:h-120 bg-black bg-cover 
+        <div className="flex flex-col md:flex-row bg-[url(/images/teste_bg_catalogo.png)] justify-around items-center w-full h-180 md:h-120 bg-black bg-cover 
           py-20 space-y-10">
           <div className="flex flex-col items-center bg-[url(/images)]
           text-white font-bold text-lg space-y-4
-          sm:text-xl md:text-2xl lg:text-3xl">
-            <div>
-              <h1 className="">Veja nosso catálogo de cores</h1>
+          text-xl sm:text-xl md:text-2xl lg:text-3xl
+          pl-10">
+            <div className="text-wrap text-center
+            max-w-70 sm:max-w-125 md:max-w-md lg:max-w-xl">
+              <h1>Baixe nosso catálogo e conheça um pouco das cores que temos disponível</h1>
             </div>
             <Catalogo />
           </div>

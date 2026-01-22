@@ -2,6 +2,7 @@
     {
         "id": 1,
         "descid": 1,
+        "capa": "",
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""
@@ -9,6 +10,7 @@
     {
         "id": 2,
         "descid": 2,
+        "capa": "",
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""
@@ -16,6 +18,7 @@
     {
         "id": 3,
         "descid": 3,
+        "capa": "",
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""
@@ -23,6 +26,7 @@
     {
         "id": 4,
         "descid": 4,
+        "capa": "",
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""
@@ -30,6 +34,7 @@
     {
         "id": 5,
         "descid": 5,
+        "capa": "",
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""
@@ -37,6 +42,7 @@
     {
         "id": 6,
         "descid": 6,
+        "capa": "",
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""
@@ -44,13 +50,15 @@
     {
         "id": 7,
         "descid": 7,
-        "imagem1": "CHIC_40_Ouro_Lateral2.jpeg",
-        "imagem2": "CHIC_40_Pink_Cima.jpeg",
-        "imagem3": "CHIC_40_Royal_Cima.jpeg"
+        "capa": "Alça_café_detalhada.jpg",
+        "imagem1": "Alça_café_detalhada.jpg",
+        "imagem2": "Alça_marrom_faixas.jpg",
+        "imagem3": "Alça_prata_c_rosa.jpg"
     },
     {
         "id": 8,
         "descid": 8,
+        "capa": "",
         "imagem1": "",
         "imagem2": "",
         "imagem3": ""

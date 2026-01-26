@@ -1,10 +1,14 @@
 "use client"
 
+import { useRef } from "react";
+import { MdNavigateNext } from "react-icons/md";
 import descricaoData from "@/data/descricao.json";
 import imagesData from "@/data/images.json";
 import Image from "next/image";
 
 export default function Detalheprod({produtoId}) {
+    const scrollContainerRef = useRef(null);
+
     // constante do produto
     const descricao = descricaoData.find(d => d.id === produtoId);
 
@@ -24,43 +28,64 @@ export default function Detalheprod({produtoId}) {
         }
         return "";
     }
+
+    const scroll = (direction) => {
+        const container = scrollContainerRef.current;
+        const scrollAmount = 200;
+
+        if (direction === "left") {
+            container.scrollBy({ left: -scrollAmount, behavior: "smooth"});
+        } else {
+            container.scrollBy({ left: scrollAmount, behavior:"smooth"});
+        }
+    }
     
     return (
         <div>
             {/* Conteúdo da caixa */}
-                <div className="text-black space-y-3">
+                <div className="text-black space-y-3 max-w-70">
                     <div>
                         <h1>{descricao.nome}</h1>
                     </div>
 
                     <div className="flex flex-col overflow-none space-y-3">
 
-                        <ul className="flex items-center justify-start overflow-x-scroll snap-x space-x-2 w-80">
-                            <div className="h-40 min-w-50 mx-15 snap-center">
-                                <Image className="size-full"
-                                src={checkImage("imagem1")}
-                                alt="foto do tear"
-                                width={300}
-                                height={300}
-                                />
-                            </div>
-                            <div className="h-40 min-w-50 mx-15 snap-center">
-                                <Image className="size-full"
-                                src={checkImage("imagem2")}
-                                alt="foto do tear"
-                                width={300}
-                                height={300}
-                                />
-                            </div>
-                            <div className="h-40 min-w-50 mx-15 snap-center">
-                                <Image className="size-full"
-                                src={checkImage("imagem3")}
-                                alt="foto do tear"
-                                width={300}
-                                height={300}
-                                />
-                            </div>
-                        </ul>
+                        <div className="flex flex-row">
+                            <button onClick={() => scroll("left")} className="rotate-180 hover:cursor-pointer">
+                                <MdNavigateNext />
+                            </button>
+
+                            <ul ref={scrollContainerRef} className="flex items-center justify-start overflow-x-scroll snap-x w-80">
+                                <div className="h-40 min-w-50 ml-4 mr-2 snap-center">
+                                    <Image className="size-full"
+                                    src={checkImage("imagem1")}
+                                    alt="Produto"
+                                    width={300}
+                                    height={300}
+                                    />
+                                </div>
+                                <div className="h-40 min-w-50 mx-2 snap-center">
+                                    <Image className="size-full"
+                                    src={checkImage("imagem2")}
+                                    alt="Produto"
+                                    width={300}
+                                    height={300}
+                                    />
+                                </div>
+                                <div className="h-40 min-w-50 ml-2 mr-4 snap-center">
+                                    <Image className="size-full"
+                                    src={checkImage("imagem3")}
+                                    alt="Produto"
+                                    width={300}
+                                    height={300}
+                                    />
+                                </div>
+                            </ul>
+
+                            <button onClick={() => scroll("right")} className="hover:cursor-pointer">
+                                <MdNavigateNext />
+                            </button>
+                        </div>
 
                         <div>
                             <div className="font-normal text-base pt-2">

@@ -101,9 +101,9 @@ export default function Home() {
             </div>
             <Catalogo />
           </div>
-          <div className="bg-[url(/images)]">
+          <div className="">
               <Image className="h-100 w-100"
-              src="/images/catalogo_outra_empresa.png"
+              src="/images/catalogo_pandora.png"
               alt=""
               width={200}
               height={200}

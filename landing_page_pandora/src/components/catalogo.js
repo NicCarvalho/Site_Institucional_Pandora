@@ -16,8 +16,8 @@ export default function Catalogo() {
 
     const downloadFile = () => {
         const link = document.createElement("a");
-        link.href = "/doc/apresentação_pandora.pdf";
-        link.download = "Catálogo";
+        link.href = "/doc/catalogo_pandora.pdf";
+        link.download = "Catálogo_cores";
         link.click();
         setShowOverlay(false);
     }

@@ -2,65 +2,65 @@
     {
         "id": 1,
         "descid": 1,
-        "capa": "",
-        "imagem1": "",
-        "imagem2": "",
-        "imagem3": ""
+        "capa": "viesalgodao/paa.jpeg",
+        "imagem1": "viesalgodao/pab2.jpeg",
+        "imagem2": "viesalgodao/paa.jpeg",
+        "imagem3": "viesalgodao/pab2.jpeg"
     },
     {
         "id": 2,
         "descid": 2,
-        "capa": "",
-        "imagem1": "",
-        "imagem2": "",
-        "imagem3": ""
+        "capa": "algodaoalca/pab.jpeg",
+        "imagem1": "algodaoalca/pab.jpeg",
+        "imagem2": "algodaoalca/pab.jpeg",
+        "imagem3": "algodaoalca/pab.jpeg"
     },
     {
         "id": 3,
         "descid": 3,
-        "capa": "",
-        "imagem1": "",
-        "imagem2": "",
-        "imagem3": ""
+        "capa": "canelada/pac2.jpeg",
+        "imagem1": "canelada/pac.jpeg",
+        "imagem2": "canelada/pac2.jpeg",
+        "imagem3": "canelada/pac.jpeg"
     },
     {
         "id": 4,
         "descid": 4,
-        "capa": "",
-        "imagem1": "",
-        "imagem2": "",
-        "imagem3": ""
+        "capa": "algodaoepcl/pad.jpeg",
+        "imagem1": "algodaoepcl/pad.jpeg",
+        "imagem2": "algodaoepcl/pad.jpeg",
+        "imagem3": "algodaoepcl/pad.jpeg"
     },
     {
         "id": 5,
         "descid": 5,
-        "capa": "",
-        "imagem1": "",
-        "imagem2": "",
-        "imagem3": ""
+        "capa": "viesgorgurao/pyc_2.jpeg",
+        "imagem1": "viesgorgurao/pya.jpeg",
+        "imagem2": "viesgorgurao/pyc.jpeg",
+        "imagem3": "viesgorgurao/pyc_3.jpeg"
     },
     {
         "id": 6,
         "descid": 6,
-        "capa": "",
-        "imagem1": "",
-        "imagem2": "",
-        "imagem3": ""
+        "capa": "fitagalao/pyi.jpeg",
+        "imagem1": "fitagalao/pyi_2.jpeg",
+        "imagem2": "fitagalao/pyi.jpeg",
+        "imagem3": "fitagalao/pyi_2.jpeg"
     },
     {
         "id": 7,
         "descid": 7,
-        "capa": "Alça_café_detalhada.jpg",
-        "imagem1": "Alça_café_detalhada.jpg",
-        "imagem2": "Alça_marrom_faixas.jpg",
-        "imagem3": "Alça_prata_c_rosa.jpg"
+        "capa": "chic/chic.jpeg",
+        "imagem1": "chic/chic_2.jpeg",
+        "imagem2": "chic/chic_4.jpeg",
+        "imagem3": "chic/chic_3.jpeg"
     },
     {
         "id": 8,
         "descid": 8,
-        "capa": "",
-        "imagem1": "",
-        "imagem2": "",
-        "imagem3": ""
+        "capa": "acetinado/acet_3.jpeg",
+        "imagem1": "acetinado/acet.jpeg",
+        "imagem2": "acetinado/acet_2.jpeg",
+        "imagem3": "acetinado/acet_3.jpeg"
     }
 ]

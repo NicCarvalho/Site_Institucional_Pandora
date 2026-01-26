@@ -14,9 +14,7 @@ export default function Navbar_landpage() {
   return (
     <div id="home">
       <nav className="bg-white text-black h-15
-      flex flex-row px-12 md:px-30 justify-between items-center
-      border-b-2 
-      border-[#F4C317]">
+      flex flex-row px-12 md:px-30 justify-between items-center">
         <div className="md:hidden h-full">
           <Image
           src="/icon/ptextil.png" 
@@ -59,7 +57,7 @@ export default function Navbar_landpage() {
         {/* Menu Mobile */}
         {isOpen && (
           // hover:bg-gray-100
-          <div className="md:hidden bg-white border-b-2 border-[#F4C317] absolute top-15 left-0 w-full flex flex-col items-center font-semibold">
+          <div className="md:hidden bg-[rgba(245,245,245,1)] border-[#F4C317] absolute top-15 left-0 w-full flex flex-col items-center font-semibold">
             <div className="flex items-center px-5">
               <Link href="/#home">
                 <button onClick={() => setIsOpen(false)} className="transition duration-300 hover:-translate-y-1/15 hover:text-[#06903B]">Home</button> 

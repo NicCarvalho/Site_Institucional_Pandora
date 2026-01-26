@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Seção da Home */}
 
-        <div className="bg-[url(/images/foto_tear.jpg)] bg-cover
+        <div className="bg-[url(/images/banner_pandora.png)] bg-bottom sm:bg-bottom-left bg-cover
         min-h-[95.6dvh] md:min-h-[92.6dvh]
         flex flex-col justify-center items-center">
           <div className="flex bg-[rgba(255,255,255,0.8)] 
@@ -80,7 +80,7 @@ export default function Home() {
 
       <hr id="produtos" className="hidden" name="ancora" />
 
-      <div className="flex flex-col items-center border-b-5">
+      <div className="flex flex-col items-center">
         <div>
           <h1 className="text-black font-extrabold text-3xl
           sm:text-4xl
@@ -89,7 +89,7 @@ export default function Home() {
 
         <div><Produtos /></div>
 
-        <div className="flex flex-col md:flex-row bg-[url(/images/teste_bg_catalogo.png)] justify-around items-center w-full h-180 md:h-120 bg-black bg-cover 
+        <div className="flex flex-col md:flex-row bg-[url(/images/teste_bg_catalogo.png)] justify-around items-center w-full h-180 md:h-120 bg-cover 
           py-20 space-y-10">
           <div className="flex flex-col items-center bg-[url(/images)]
           text-white font-bold text-lg space-y-4
@@ -147,23 +147,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* <form action="https://formspree.io/f/mgooeqep" method="POST" 
-          className="flex flex-col w-full max-w-lg md:max-w-xl">
-            <label>Nome Completo:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-md mb-3 maxlenth" name="inpNome" />
-
-            <label>Telefone:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpTelefone" />
-
-            <label>Email:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpEmail" />
-
-            <label>Mensagem:</label>
-            <textarea className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpMensagem"/>
-
-            <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md" type="submit">Enviar</button>
-          </form> */}
 
           <ContactForm />
 

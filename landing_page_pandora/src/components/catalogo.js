@@ -41,8 +41,8 @@ export default function Catalogo() {
                 p-2 bg-[#0E4935] text-white rounded-md mx-5 py-1">Ver catálogo</button>
             </a>
             {showOverlay && (
-                <div className="fixed inset-0 bg-[rgba(255,255,255,0.5)] flex items-center justify-center z-50">
-                    <div data-aos="fade-up" data-aos-delay="150" className="flex flex-col items-end rounded-xl bg-[#0E4935] text-white
+                <div data-aos="fade-zoom-in" className="fixed inset-0 bg-[rgba(255,255,255,0.2)] flex items-center justify-center z-50">
+                    <div data-aos="fade-up" data-aos-delay="300" className="flex flex-col items-end rounded-xl bg-[#0E4935] text-white
                     px-6 py-9 text-base font-normal">
                         <div>
                             {/* Botao de fechar */}
@@ -59,7 +59,7 @@ export default function Catalogo() {
                             <div className="md:min-w-1/2">
                                 {/* Formulário igual ao da página princípal, mas com um css diferente */}
 
-                                <form id="contact-form" onSubmit={handleSubmit}
+                                <form onSubmit={handleSubmit}
                                     className="flex flex-col">
                                     <label>Nome Completo:</label>
                                     <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3"
@@ -109,7 +109,8 @@ export default function Catalogo() {
                                     errors={state.errors}
                                     />
 
-                                    <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md"
+                                    <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md
+                                    transition hover:scale-105 active:invert"
                                     disabled={state.submitting}
                                     type="submit">Enviar</button>
 

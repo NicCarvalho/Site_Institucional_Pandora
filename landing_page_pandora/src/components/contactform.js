@@ -12,7 +12,7 @@ function ContactForm() {
   }
   
   return (
-    <form id="contact-form" onSubmit={handleSubmit}
+    <form onSubmit={handleSubmit}
           className="flex flex-col w-full max-w-lg md:max-w-xl">
             <label>Nome Completo:</label>
             <input className="bg-white px-3 h-8 text-black text-sm rounded-full mb-3"
@@ -62,7 +62,8 @@ function ContactForm() {
             errors={state.errors}
             />
 
-            <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md" 
+            <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md
+            transition hover:scale-105 active:invert" 
             disabled={state.submitting}
             type="submit">Enviar</button>
           </form>

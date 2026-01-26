@@ -1,10 +1,8 @@
 "use client"
 
-import { FaPlus } from "react-icons/fa";
 import descricaoData from "@/data/descricao.json";
 import imagesData from "@/data/images.json";
 import Image from "next/image";
-import { IoClose } from "react-icons/io5";
 
 export default function Detalheprod({produtoId}) {
     // constante do produto
@@ -36,6 +34,7 @@ export default function Detalheprod({produtoId}) {
                     </div>
 
                     <div className="flex flex-col overflow-none space-y-3">
+
                         <ul className="flex items-center justify-start overflow-x-scroll snap-x space-x-2 w-80">
                             <div className="h-40 min-w-50 mx-15 snap-center">
                                 <Image className="size-full"

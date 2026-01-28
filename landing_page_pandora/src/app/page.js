@@ -94,7 +94,7 @@ export default function Home() {
           <div className="flex flex-col items-center bg-[url(/images)]
           text-white font-bold text-lg space-y-4
           text-xl sm:text-xl md:text-2xl lg:text-3xl
-          pl-10">
+          md:pl-10">
             <div className="text-wrap text-center
             max-w-70 sm:max-w-125 md:max-w-md lg:max-w-xl">
               <h1>Baixe nosso catálogo e conheça um pouco das cores que temos disponível</h1>
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <div>
               <div className="flex flex-col sm:flex-row mt-5 items-start justify-center space-x-6">
-                <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%21%21%20Meu%20nome%20%C3%A9%20Gustavo%2C%20vamos%20fazer%20um%20or%C3%A7amento%3F">
+                <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento">
                   <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(11) 96172-2824</p></div>
                 </a>
                 <div className="flex flex-row space-x-3"><FaPhone /><p>(11) 4638-4001</p></div>

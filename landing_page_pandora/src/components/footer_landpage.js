@@ -18,7 +18,9 @@ export default function Footer_landpage() {
                 height={50} />
             </div>
             <div className="flex flex-row justify-between text-sm sm:text-base space-x-6">
-                <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(11) 96172-2824</p></div>
+                <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento">
+                  <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(11) 96172-2824</p></div>
+                </a>
                 <div className="flex flex-row space-x-3"><FaPhone /><p>(11) 4638-4001</p></div>
             </div>
         </div>

@@ -43,12 +43,12 @@ export default function Detalheprod({produtoId}) {
     return (
         <div>
             {/* Conteúdo da caixa */}
-                <div className="text-black space-y-3 max-w-70">
+                <div className="text-black space-y-4 max-w-70">
                     <div>
                         <h1>{descricao.nome}</h1>
                     </div>
 
-                    <div className="flex flex-col overflow-none space-y-3">
+                    <div className="flex flex-col overflow-none space-y-4">
 
                         <div className="flex flex-row">
                             <button onClick={() => scroll("left")} className="rotate-180 hover:cursor-pointer">

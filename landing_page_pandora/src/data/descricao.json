@@ -64,11 +64,20 @@
     },
     {
         "id": 8,
-        "nome": "Alça Premium Sublimação",
+        "nome": "Alça Acetinada",
         "material": "Material 100% em poliéster",
         "calandra": "Sem  Goma",
         "caracteristica": "Alta resistência a temperaturas e facilidade para estampar",
         "larguras": "20, 25, 30 e 40mm",
         "cores": "Disponível em diversas cores"
+    },
+    {
+        "id": 9,
+        "nome": "Alça jakard",
+        "material": "",
+        "calandra": "Sem Goma",
+        "caracteristica": "",
+        "larguras": "",
+        "cores": ""
     }
 ]

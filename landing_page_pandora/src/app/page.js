@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Seção da Home */}
 
-        <div className="bg-[url(/images/foto_tear.jpg)] bg-cover
+        <div className="bg-[url(/images/banner_pandora.png)] bg-bottom sm:bg-bottom-left bg-cover
         min-h-[95.6dvh] md:min-h-[92.6dvh]
         flex flex-col justify-center items-center">
           <div className="flex bg-[rgba(255,255,255,0.8)] 
@@ -56,7 +56,8 @@ export default function Home() {
           max-w-120 max-h-fit
           m-8 p-6
           flex flex-col 
-          shadow-xl/20 rounded-lg gap-3"
+          shadow-xl/20 rounded-lg gap-3
+          border border-[#020232]"
           data-aos="flip-right"
           data-aos-delay="200">
             <p>A PANDORA TÊXTIL foi fundada em Março de 2011, unindo o conhecimento técnico e comercial, acumulado ao longo de 20 anos, para atender ao público com uma estrutura enxuta,  ágil e focada em atingir padrões de excelência.</p>
@@ -87,15 +88,30 @@ export default function Home() {
         </div>
 
         <div><Produtos /></div>
-        <div className="flex flex-col w-full items-center text-black font-bold text-lg py-3 md:space-y-2
-        sm:text-xl md:text-2xl lg:text-3xl">
-          <div>
-            <h1 className="">Veja nosso catálogo de cores</h1>
+
+        <div className="flex flex-col md:flex-row bg-[url(/images/teste_bg_catalogo.png)] justify-around items-center w-full h-180 md:h-120 bg-cover 
+          py-20 space-y-10">
+          <div className="flex flex-col items-center bg-[url(/images)]
+          text-white font-bold text-lg space-y-4
+          text-xl sm:text-xl md:text-2xl lg:text-3xl
+          md:pl-10">
+            <div className="text-wrap text-center
+            max-w-70 sm:max-w-125 md:max-w-md lg:max-w-xl">
+              <h1>Baixe nosso catálogo e conheça um pouco das cores que temos disponível</h1>
+            </div>
+            <Catalogo />
           </div>
-
-          <Catalogo />
-
+          <div className="">
+              <Image className="h-100 w-100"
+              src="/images/catalogo_pandora.png"
+              alt=""
+              width={200}
+              height={200}
+              />
+          </div>
         </div>
+
+
       </div>
 
       {/* Seção Contato */}
@@ -124,30 +140,13 @@ export default function Home() {
             </div>
             <div>
               <div className="flex flex-col sm:flex-row mt-5 items-start justify-center space-x-6">
-                <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%21%21%20Meu%20nome%20%C3%A9%20Gustavo%2C%20vamos%20fazer%20um%20or%C3%A7amento%3F">
+                <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento">
                   <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(11) 96172-2824</p></div>
                 </a>
                 <div className="flex flex-row space-x-3"><FaPhone /><p>(11) 4638-4001</p></div>
               </div>
             </div>
           </div>
-
-          {/* <form action="https://formspree.io/f/mgooeqep" method="POST" 
-          className="flex flex-col w-full max-w-lg md:max-w-xl">
-            <label>Nome Completo:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-md mb-3 maxlenth" name="inpNome" />
-
-            <label>Telefone:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpTelefone" />
-
-            <label>Email:</label>
-            <input className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpEmail" />
-
-            <label>Mensagem:</label>
-            <textarea className="bg-white px-2 p-1 text-black rounded-lg mb-3" name="inpMensagem"/>
-
-            <button className="bg-[#F4C317] text-black font-bold py-2 px-4 rounded-md" type="submit">Enviar</button>
-          </form> */}
 
           <ContactForm />
 

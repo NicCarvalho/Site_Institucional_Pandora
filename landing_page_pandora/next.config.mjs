@@ -2,7 +2,7 @@
 const nextConfig = {
   /* config options here */
   reactCompiler: true,
-  output: 'standalone',
+  trailingSlash: true,
 };
 
 export default nextConfig;

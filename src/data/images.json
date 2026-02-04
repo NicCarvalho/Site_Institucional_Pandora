@@ -62,5 +62,13 @@
         "imagem1": "acetinado/acet.jpeg",
         "imagem2": "acetinado/acet_2.jpeg",
         "imagem3": "acetinado/acet_3.jpeg"
+    },
+    {
+        "id": 9,
+        "descid": 9,
+        "capa": "jacquard/jacquard.jpeg",
+        "imagem1": "jacquard/jacquard2.jpeg",
+        "imagem2": "jacquard/jacquard.jpeg",
+        "imagem3": "jacquard/jacquard3.jpeg"
     }
 ]

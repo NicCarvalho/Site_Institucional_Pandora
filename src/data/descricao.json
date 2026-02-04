@@ -70,5 +70,14 @@
         "caracteristica": "Alta resistência a temperaturas e facilidade para estampar",
         "larguras": "20, 25, 30 e 40mm",
         "cores": "Disponível em diversas cores"
+    },
+    {
+        "id": 9,
+        "nome": "Alça jacquard",
+        "material": "Material 100% em poliéster",
+        "calandra": "Sem Goma",
+        "caracteristica": "Alta resistência, durabilidade e gravações personalizadas",
+        "larguras": "20, 25, 30 e 40mm",
+        "cores": "Disponível em diversas cores e combinações"
     }
 ]

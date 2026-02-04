@@ -97,9 +97,9 @@ export default function Home() {
               lg:w-120 lg:h-68
               xl:w-150 xl:h-85" 
               src="https://www.youtube.com/embed/GCabTpCrQv4?si=zJoDoPujfux_2qN1&amp;controls=0" 
-              title="YouTube video player" frameborder="0" 
+              title="YouTube video player" frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin">
+              referrerPolicy="strict-origin-when-cross-origin">
             </iframe>
           </div>
 

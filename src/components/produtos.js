@@ -28,7 +28,7 @@ export default function Produtos() {
                     bg-[#F8F8F8] rounded-3xl shadow-xl
                     border-1 border-[#020232]
                     transition duration-50 delay-150 ease-in-out hover:scale-105
-                    transform-3d hover:rotate-y-180 hover:cursor-pointer" data-aos="">
+                    transform-3d focus:rotate-y-180 hover:rotate-y-180 hover:cursor-pointer" tabIndex="0" data-aos="">
                     <div className="translate-z-1 absolute">
                         <Image className="rounded-2xl h-70"
                         src={checkImageThumb()}

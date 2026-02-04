@@ -6,7 +6,7 @@ import Produtos from "@/components/produtos";
 import Image from "next/image";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FaWhatsapp } from 'react-icons/fa';
+import { FaWhatsapp, FaWhatsappSquare } from 'react-icons/fa';
 import { FaPhone } from "react-icons/fa";
 import { useEffect } from "react";
 
@@ -21,10 +21,10 @@ export default function Home() {
 
       {/* Seção da Home */}
 
-        <div className="bg-[url(/images/banner_pandora.png)] bg-bottom sm:bg-bottom-left bg-cover
+        <div className="bg-[url(/images/banner_pandora.jpeg)] max-md:bg-bottom bg-cover
         min-h-[95.6dvh] md:min-h-[92.6dvh]
         flex flex-col justify-center items-center">
-          <div className="flex bg-[rgba(255,255,255,0.8)] 
+          <div className="bg-[rgba(255,255,255,0.8)] 
             p-10 md:p-8
             rounded-full space-y-4
             flex flex-col justify-center items-center">
@@ -49,7 +49,7 @@ export default function Home() {
         <hr id="sobre_nos" className="hidden" name="ancora" />
         <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center
           lg:-me-[15%]">
-          <div className="text-black text-lg bg-[#F8F8F8]
+          <div className="text-black text-base bg-[#F8F8F8]
           xl:ml-25 xl:max-w-lg
           lg:ml-15 lg:max-w-md
           md:max-w-160
@@ -67,12 +67,42 @@ export default function Home() {
             <p>Com profissionais de alto desempenho, que lutam pelo crescimento pessoal e empresarial, zelamos pela melhoria contínua de nossos produtos.</p>
           </div>
           <div data-aos="fade-left" data-aos-delay="150">
+              {/* lg:max-w-150 xl:max-w-200 */}
             <Image className="lg:max-w-150 xl:max-w-200 lg:mask-l-from-60%"
             src="/images/foto_pandora.jpg"
             alt="Foto da Loja Pandora Textil"
             width={1200}
             height={1200} />
           </div>
+        </div>
+        <div className="flex flex-col lg:flex-row-reverse justify-around items-center 
+        py-12 mt-12 space-y-5 lg:space-y-10 bg-[#0E4935]">
+          
+          <div data-aos="zoom-in-left" className="flex flex-col items-center text-white text-wrap 
+          w-[90dvw] md:w-150 lg:w-100 xl:w-150
+          lg:space-y-3">
+              <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
+                CONFIANÇA E AGILIDADE, SEMPRE!
+              </h1>
+              <p className="text-base text-center">Produzimos cerca de milhões de 
+                metros de fitas todos os meses, com 
+                isso, garantimos que a necessidade 
+                da sua empresa seja atendida no 
+                melhor prazo possível.
+              </p>
+          </div>
+          <div data-aos="zoom-in-right">
+            <iframe className="rounded-xl shadow-xl/30 w-[90dvw] h-[51dvw]
+              md:w-[80dvw] md:h-[45dvw]
+              lg:w-120 lg:h-68
+              xl:w-150 xl:h-85" 
+              src="https://www.youtube.com/embed/GCabTpCrQv4?si=zJoDoPujfux_2qN1&amp;controls=0" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+
         </div>
       </div>
 
@@ -89,7 +119,7 @@ export default function Home() {
 
         <div><Produtos /></div>
 
-        <div className="flex flex-col md:flex-row bg-[url(/images/teste_bg_catalogo.png)] justify-around items-center w-full h-180 md:h-120 bg-cover 
+        <div className="flex flex-col md:flex-row bg-[url(/images/bg_catalogo.jpeg)] justify-around items-center w-full h-180 md:h-120 bg-cover 
           py-20 space-y-10">
           <div className="flex flex-col items-center bg-[url(/images)]
           text-white font-bold text-lg space-y-4
@@ -110,9 +140,9 @@ export default function Home() {
               />
           </div>
         </div>
-
-
       </div>
+
+      <div className="my-4"></div>
 
       {/* Seção Contato */}
 
@@ -139,11 +169,40 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className="flex flex-col sm:flex-row mt-5 items-start justify-center space-x-6">
-                <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento">
-                  <div className="flex flex-row space-x-3"><FaWhatsapp /><p>(11) 96172-2824</p></div>
-                </a>
-                <div className="flex flex-row space-x-3"><FaPhone /><p>(11) 4638-4001</p></div>
+              <div className="flex flex-col mt-5 items-center justify-center space-y-5
+              sm:flex-row sm:space-x-15
+              md:flex-col md:space-x-0
+              lg:flex-row lg:justify-end lg:space-x-10 
+              xl:justify-center xl:space-x-20">
+                <div className="flex flex-col items-center text-center space-y-1">
+                  <FaWhatsapp className="mb-3"/>
+                  
+                  <a href="https://api.whatsapp.com/send?phone=5511961722824&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento">
+                    <div className="flex flex-row space-x-3">
+                      <h1 className="w-15"> Gustavo </h1>
+                      <p>(11) 96172-2824</p>
+                    </div>
+                  </a>
+
+                  <a href="https://api.whatsapp.com/send?phone=5511939379486&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento">
+                    <div className="flex flex-row space-x-3">
+                      <h1 className="w-15"> Victor </h1>
+                      <p>(11) 93937-9486</p>
+                    </div>
+                  </a>
+
+                  <a href="https://api.whatsapp.com/send?phone=5511998610123&text=Ol%C3%A1%2C%20gostaria%20de%20realizar%20um%20or%C3%A7amento">
+                    <div className="flex flex-row space-x-3">
+                      <h1 className="w-15"> Cida </h1>
+                      <p>(11) 99861-0123</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div className="flex flex-col items-center">
+                  <FaPhone className="mb-3"/>
+                  <p>(11) 4638-4001</p>
+                </div>
               </div>
             </div>
           </div>

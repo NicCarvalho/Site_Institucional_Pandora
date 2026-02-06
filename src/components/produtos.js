@@ -4,6 +4,7 @@ import Image from "next/image";
 import Detalheprod from "./detalheprod";
 import imagesData from "@/data/images.json";
 import descricaoData from "@/data/descricao.json";
+import Link from "next/link";
 
 export default function Produtos() {
 
@@ -24,12 +25,13 @@ export default function Produtos() {
 
                 return (
                 <div key={produto.id} className="flex flex-col justify-start items-center
-                    px-5 py-10 space-y-5 w-86 h-120
+                    space-y-5 w-86 h-120
                     bg-[#F8F8F8] rounded-3xl shadow-xl
                     border-1 border-[#020232]
                     transition duration-50 delay-150 ease-in-out hover:scale-105
-                    transform-3d focus:rotate-y-180 hover:rotate-y-180 hover:cursor-pointer" tabIndex="0" data-aos="">
-                    <div className="translate-z-1 absolute">
+                    transform-3d focus:rotate-y-180 hover:rotate-y-180 hover:cursor-pointer
+                    group" tabIndex="0" data-aos="">
+                    <div className="translate-z-1 absolute pt-10">
                         <Image className="rounded-2xl h-70"
                         src={checkImageThumb()}
                         alt="Foto de Produtos Pandora Textil"
@@ -37,8 +39,17 @@ export default function Produtos() {
                         height={350} />
                         <h1 className="w-72">{produto.nome}</h1>
                     </div>
-                    <div className="-translate-z-1 rotate-y-180">
+                    <div className="flex justify-center pt-5 -translate-z-1 rotate-y-180 w-full h-full rounded-3xl overflow-hidden">
                         <Detalheprod produtoId={produto.id} />
+                        <div className="flex justify-center absolute bottom-[-40] w-full pb-1
+                        bg-[#DE5050] md:bg-[#F41E1E] hover:cursor-pointer
+                        transition duration-400 delay-400 group-focus:-translate-y-10">
+                            <Link href="/#contato">
+                                <button>
+                                    Orçar
+                                </button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             )})}

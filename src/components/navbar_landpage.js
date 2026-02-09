@@ -13,7 +13,8 @@ export default function Navbar_landpage() {
 
   return (
     <div id="home">
-      <nav className="bg-white text-black h-15
+      <nav className="fixed w-full z-100
+      bg-white text-black h-15
       flex flex-row px-12 md:px-30 justify-between items-center">
         <div className="md:hidden h-full">
           <Image
@@ -36,7 +37,7 @@ export default function Navbar_landpage() {
               <Link href="/#home">      <button className="">Home</button></Link>
             </div>
             <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100 hover:-translate-y-1/25 hover:text-[#06903B]">
-              <Link href="/#sobre_nos"> <button className="">Sobre Nós</button> </Link>
+              <Link  href="/#sobre_nos"> <button className="">Sobre Nós</button> </Link>
             </div>
             <div className="flex items-center px-5 transition duration-300 hover:bg-gray-100 hover:-translate-y-1/25 hover:text-[#06903B]">
               <Link href="/#produtos">  <button className="">Produtos</button> </Link>

@@ -22,7 +22,7 @@ export default function Home() {
       {/* Seção da Home */}
 
         <div className="bg-[url(/images/banner_pandora.jpeg)] max-md:bg-bottom bg-cover
-        min-h-[95.6dvh] md:min-h-[92.6dvh]
+        min-h-[100dvh]
         flex flex-col justify-center items-center">
           <div className="bg-[rgba(255,255,255,0.8)] 
             p-10 md:p-8
@@ -45,8 +45,7 @@ export default function Home() {
 
       {/* Seção Sobre nós */}
       
-      <div className="py-15 lg:py-20 overflow-x-hidden">
-        <hr id="sobre_nos" className="hidden" name="ancora" />
+      <div id="sobre_nos" className="py-15 lg:py-20 overflow-x-hidden">
         <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center
           lg:-me-[15%]">
           <div className="text-black text-base bg-[#F8F8F8]
@@ -84,7 +83,7 @@ export default function Home() {
               <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
                 CONFIANÇA E AGILIDADE, SEMPRE!
               </h1>
-              <p className="text-base text-center">Produzimos cerca de milhões de 
+              <p className="text-base text-center">Produzimos milhões de 
                 metros de fitas todos os meses, com 
                 isso, garantimos que a necessidade 
                 da sua empresa seja atendida no 
@@ -106,9 +105,9 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Seção Produtos */}
+      <hr id="produtos" className="invisible z-50 -translate-y-15" name="ancora" />
 
-      <hr id="produtos" className="hidden" name="ancora" />
+      {/* Seção Produtos */}
 
       <div className="flex flex-col items-center">
         <div>
@@ -117,7 +116,9 @@ export default function Home() {
           lg:text-5xl">Nossos Produtos</h1>
         </div>
 
-        <div><Produtos /></div>
+        <div>
+          <Produtos />
+        </div>
 
         <div className="flex flex-col md:flex-row bg-[url(/images/bg_catalogo.jpeg)] justify-around items-center w-full h-180 md:h-120 bg-cover 
           py-20 space-y-10">
@@ -127,7 +128,7 @@ export default function Home() {
           md:pl-10">
             <div className="text-wrap text-center
             max-w-70 sm:max-w-125 md:max-w-md lg:max-w-xl">
-              <h1>Baixe nosso catálogo e conheça um pouco das cores que temos disponível</h1>
+              <h1>Baixe nosso catálogo e conheça mais das cores que temos disponíveis</h1>
             </div>
             <Catalogo />
           </div>
@@ -146,7 +147,7 @@ export default function Home() {
 
       {/* Seção Contato */}
 
-      <hr id="contato" className="hidden" name="ancora" />
+      <hr id="contato" className="invisible z-50 -translate-y-15" name="ancora" />
 
       <div className="flex flex-col size-full bg-[#0E4935]">
         <div className="flex flex-col md:flex-row items-center justify-evenly py-10

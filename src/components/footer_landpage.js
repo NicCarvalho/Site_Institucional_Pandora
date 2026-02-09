@@ -25,7 +25,7 @@ export default function Footer_landpage() {
             </div>
         </div>
         <div className="flex flex-row space-y-5 justify-center p-2">
-            <p>&copy; 2024 PandoraTextil. All rights reserved.</p>
+            <p>&copy; 2026 PandoraTextil. All rights reserved.</p>
         </div>
       </footer>
     </div>

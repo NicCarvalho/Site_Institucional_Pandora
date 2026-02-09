@@ -56,7 +56,7 @@ export default function Produtos() {
         </div>
         <div className="text-base self-start mt-5 max-md:ml-3">
             <h1>
-              * Produzimos também larguras personalizadas, entre em contato e saíba mais
+              * Produzimos também larguras personalizadas, entre em contato e saiba mais
             </h1>    
         </div>
     </div>

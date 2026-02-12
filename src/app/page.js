@@ -48,22 +48,19 @@ export default function Home() {
       <div id="sobre_nos" className="py-15 lg:py-20 overflow-x-hidden">
         <div className="flex flex-col lg:flex-row justify-center lg:justify-around items-center
           lg:-me-[15%]">
-          <div className="text-black text-base bg-[#F8F8F8]
+          <div className="text-black text-lg bg-[#F8F8F8]
           xl:ml-25 xl:max-w-lg
           lg:ml-15 lg:max-w-md
           md:max-w-160
-          max-w-120 max-h-fit
-          m-8 p-6
+          max-w-120
+          m-8  p-6
           flex flex-col 
           shadow-xl/20 rounded-lg gap-3
           border border-[#020232]"
-          data-aos="flip-right"
-          data-aos-delay="200">
-            <p>A PANDORA TÊXTIL foi fundada em Março de 2011, unindo o conhecimento técnico e comercial, acumulado ao longo de 20 anos, para atender ao público com uma estrutura enxuta,  ágil e focada em atingir padrões de excelência.</p>
-            <p>Desta forma,  nos sentimos seguros em oferecer os nossos produtos aos mais variados clientes, com alta qualidade, agilidade e preço justo.</p>
-            <p>Isto faz com que nossa empresa, sinta-se confiante e  capaz de ampliar seu mercado.</p>
-            <p>Muito trabalho, dedicação, seriedade e transparência, esses são os valores que fazem parte do nosso dia-a-dia.</p>
-            <p>Com profissionais de alto desempenho, que lutam pelo crescimento pessoal e empresarial, zelamos pela melhoria contínua de nossos produtos.</p>
+          data-aos="flip-rigt"
+          data-aos-delay="00">
+            <p>A Pandora Têxtil, fundada em 2011, reúne mais de 20 anos de experiência técnica e comercial no setor têxtil. Atuamos com uma estrutura ágil e eficiente, oferecendo produtos de alta qualidade, preço justo e pronta entrega.</p>
+            <p>Nosso compromisso é atender diferentes mercados com seriedade, transparência e foco contínuo na melhoria de nossos produtos e processos.</p>
           </div>
           <div data-aos="fade-left" data-aos-delay="150">
               {/* lg:max-w-150 xl:max-w-200 */}

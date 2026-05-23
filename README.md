@@ -1,4 +1,4 @@
-# <img src="Docs/ptextil.png" alt=""> Site Institucional - Pandora Textil
+# <img src="Docs/ptextil.png" alt="" width="10"> Site Institucional - Pandora Textil
 
 <img src="Docs/Homepage.png" alt="">
 

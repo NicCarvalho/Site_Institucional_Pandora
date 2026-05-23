@@ -1,5 +1,7 @@
 # 🏢 Site Institucional - Pandora Textil
 
+<img src="Docs/Homepage.png" alt="">
+
 Este é um projeto de site institucional desenvolvido para a Pandora Textil, com o objetivo de apresentar a marca, seu catálogo de produtos e canais de atendimento de forma moderna, responsiva e performática. 
 
 O projeto faz parte do meu portfólio pessoal e foi construído utilizando **React** para a componentização e gerenciamento de estado da interface.

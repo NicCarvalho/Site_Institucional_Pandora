@@ -6,6 +6,8 @@ Este é um projeto de site institucional desenvolvido para a Pandora Textil, com
 
 O projeto faz parte do meu portfólio pessoal e foi construído utilizando **React** para a componentização e gerenciamento de estado da interface.
 
+[🔗 Clique aqui para visualizar o projeto ao vivo](https://pandoratextil.com.br/)
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
